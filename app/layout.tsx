@@ -1,10 +1,11 @@
-import { Geist, Geist_Mono, Inter, Urbanist } from "next/font/google"
+import { Geist_Mono, Urbanist } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { Metadata } from "next"
-import { NavBar } from "@/components/NavBar"
+import { NavBar } from "@/components/layout/NavBar"
+import { Footer } from "@/components/Footer"
 
 const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -43,6 +44,7 @@ export default function RootLayout({
         <ThemeProvider>
           <NavBar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

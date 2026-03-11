@@ -22,21 +22,21 @@ const components: {
 }[] = [
   {
     title: "Café grano",
-    href: "/category/grano",
+    href: "/categories/cafe-grano",
     description:
       "Granos de café enteros que requieren ser molidos antes de su preparación. Ideal para los amantes del café que aprecian la frescura y la calidad",
     icon: <Leaf className="size-4 text-amber-700" />,
   },
   {
     title: "Café molido",
-    href: "/category/molido",
+    href: "/categories/cafe-molido",
     description:
       "Café en forma de polvo listo para ser utilizado en diferentes métodos de preparación, como la cafetera de filtro o la prensa francesa",
     icon: <Coffee className="size-4 text-amber-700" />,
   },
   {
     title: "Café de cápsula",
-    href: "/category/capsula",
+    href: "/categories/cafe-capsula",
     description:
       "Café envasado en cápsulas individuales, ofreciendo conveniencia y consistencia en la preparación",
     icon: <Package className="size-4 text-amber-700" />,

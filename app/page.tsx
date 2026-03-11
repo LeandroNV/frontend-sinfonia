@@ -1,7 +1,11 @@
+import { CarouselTextBanner } from "@/components/CarouselTextBanner"
+import { FeaturedProducts } from "@/components/FeaturedProducts"
+
 export default function Page() {
   return (
     <main>
-      <h1>Hola mundo</h1>
+      <CarouselTextBanner />
+      <FeaturedProducts />
     </main>
   )
 }
