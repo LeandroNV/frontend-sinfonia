@@ -1,11 +1,11 @@
 import { Geist_Mono, Urbanist } from "next/font/google"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/layout/theme-provider"
 import { cn } from "@/lib/utils"
 import { Metadata } from "next"
 import { NavBar } from "@/components/layout/NavBar"
-import { Footer } from "@/components/Footer"
+import { Footer } from "@/components/layout/Footer"
 
 const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-sans" })
 

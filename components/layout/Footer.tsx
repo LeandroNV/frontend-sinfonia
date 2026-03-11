@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Separator } from "./ui/separator"
+import { Separator } from "../ui/separator"
 
 const dataFooter = [
   { id: 1, name: "Sobre nosotros", link: "#" },
