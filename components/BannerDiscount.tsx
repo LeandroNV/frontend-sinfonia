@@ -11,6 +11,7 @@ export const BannerDiscount = () => {
         -20% al gastar $200000 o -25% al gastar $250000. Usa el código de
         LENGUPA
       </h3>
+
       <div className="mx-auto mt-5 max-w-md justify-center gap-8 sm:flex">
         <Link href={"#"} className={buttonVariants()}>
           Comprar
