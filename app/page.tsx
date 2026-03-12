@@ -1,4 +1,5 @@
 import { BannerDiscount } from "@/components/BannerDiscount"
+import { BannerProduct } from "@/components/BannerProduct"
 import { CarouselTextBanner } from "@/components/CarouselTextBanner"
 import { ChooseCategory } from "@/components/ChooseCategory"
 import { FeaturedProducts } from "@/components/FeaturedProducts"
@@ -12,11 +13,11 @@ export default function Page() {
       <Suspense fallback={<SkeletonSchema grid={3} />}>
         <FeaturedProducts />
       </Suspense>
-
       <BannerDiscount />
       <Suspense fallback={<SkeletonSchema grid={3} />}>
         <ChooseCategory />
       </Suspense>
+      <BannerProduct />
     </main>
   )
 }

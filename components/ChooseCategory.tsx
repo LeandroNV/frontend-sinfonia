@@ -5,7 +5,6 @@ import Link from "next/link"
 
 export const ChooseCategory = async () => {
   const { data } = await getCategories()
-  console.log(data)
 
   return (
     <div className="mx-auto max-w-6xl py-4 sm:px-24 sm:py-16">
