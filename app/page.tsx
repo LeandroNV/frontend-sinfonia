@@ -2,22 +2,28 @@ import { BannerDiscount } from "@/components/BannerDiscount"
 import { BannerProduct } from "@/components/BannerProduct"
 import { CarouselTextBanner } from "@/components/CarouselTextBanner"
 import { ChooseCategory } from "@/components/ChooseCategory"
+import { ChooseCategorySkeleton } from "@/components/ChooseCategory.skeleton"
 import { FeaturedProducts } from "@/components/FeaturedProducts"
-import { SkeletonSchema } from "@/components/SkeletonSchema"
+import { FeaturedProductsSkeleton } from "@/components/FeaturedProducts.skeleton"
 import { Suspense } from "react"
 
 export default function Page() {
   return (
     <main>
       <CarouselTextBanner />
-      <Suspense fallback={<SkeletonSchema grid={3} />}>
+      <Suspense fallback={<FeaturedProductsSkeleton />}>
         <FeaturedProducts />
       </Suspense>
       <BannerDiscount />
-      <Suspense fallback={<SkeletonSchema grid={3} />}>
+      <Suspense fallback={<ChooseCategorySkeleton />}>
         <ChooseCategory />
       </Suspense>
       <BannerProduct />
     </main>
   )
 }
+
+// const NeverResolves = async () => {
+//   await new Promise(() => {}) // nunca resuelve
+//   return null
+// }
