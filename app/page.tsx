@@ -22,8 +22,3 @@ export default function Page() {
     </main>
   )
 }
-
-// const NeverResolves = async () => {
-//   await new Promise(() => {}) // nunca resuelve
-//   return null
-// }
