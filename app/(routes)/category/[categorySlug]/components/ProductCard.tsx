@@ -6,6 +6,8 @@ import {
 import { ProducType } from "@/types/product"
 import Image from "next/image"
 import Link from "next/link"
+import { ProductCardActions } from "./ProductCardActions"
+import { formatPrice } from "@/lib/formatPrice"
 
 type ProductCardProps = {
   product: ProducType
@@ -16,7 +18,7 @@ export const ProductCard = (props: ProductCardProps) => {
   return (
     <Link
       href={`/product/${product.slug}`}
-      className="relative block rounded-lg p-2 transition-all duration-100 hover:shadow-lg"
+      className="group relative block rounded-lg p-2 transition-all duration-100 hover:shadow-lg"
     >
       <div className="absolute top-4 z-10 flex items-center justify-between gap-3 px-2">
         <p className="w-fit rounded-full bg-black px-2 py-1 text-xs text-white dark:bg-white dark:text-black">
@@ -48,11 +50,14 @@ export const ProductCard = (props: ProductCardProps) => {
                 />
               </div>
 
-              <div className="ab"></div>
+              <ProductCardActions product={product} />
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
+
+      <p className="text-center text-2xl">{product.productName}</p>
+      <p className="text-center font-bold">{formatPrice(product.price)}</p>
     </Link>
   )
 }

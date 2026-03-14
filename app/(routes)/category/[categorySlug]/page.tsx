@@ -23,7 +23,7 @@ export default async function Page({ params }: PageProps) {
         <FiltersControlsCategory />
 
         {/* Suspense??? */}
-        <div className="mt-8 grid gap-5 md:grid-cols-3 md:gap-10">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           {data.map((product: ProducType) => (
             <ProductCard key={product.id} product={product} />
           ))}
