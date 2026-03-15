@@ -58,6 +58,9 @@ export const ProductCard = (props: ProductCardProps) => {
 
       <p className="text-center text-2xl">{product.productName}</p>
       <p className="text-center font-bold">{formatPrice(product.price)}</p>
+
+      {/* clear */}
+      <div>Test Commit</div>
     </Link>
   )
 }
